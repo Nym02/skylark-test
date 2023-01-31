@@ -1,0 +1,23 @@
+.skylark-navbar{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 5.6rem 0;
+    font-family: $font-dm;
+    &-items{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 44px;
+    }
+    &-item{
+        &-link{
+            &:visited, &:link{
+                text-decoration: none;
+                color: $white;
+                font-size: 1.3rem;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

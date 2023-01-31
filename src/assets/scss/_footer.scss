@@ -1,0 +1,96 @@
+.skylark-footer-items-wrapper{
+    margin-top: 4rem;
+    width: 100%;
+    background-color: $purple;
+    
+    .skylark-footer-item{
+        display: flex;
+        align-items: center;
+        width: 95%;
+        padding: 4rem 0;
+        margin: auto;
+        gap: 4rem;
+    }
+    // gap: 4rem;
+    .skylark-footer-items{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        gap: 8rem;
+
+        li{
+            a{
+                &:link,&:visited{
+                    color: $white;
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+.copyright{
+    background-color: $purple-dark;
+    
+    .copyright-wrap{
+        width: 85%;
+        padding: 3rem 0;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+        }
+        .copyright-left{
+            &-items{
+                display: flex;
+                align-content: center;
+                gap: 2rem;
+                @media screen and (max-width: 500px) {
+                   margin-bottom: 2rem;
+                }
+               list-style: none;
+                    li{
+                        a{
+                            &:link,&:visited{
+                                color: $white;
+                                text-decoration: none;
+                                font-size: 1rem;
+                                text-transform: uppercase;
+                                @media screen and (max-width: 500px) {
+                                    font-size: 1.2rem;
+                                 }
+                            } 
+
+                            
+                        }
+                    }
+                
+            }
+        }
+        .copyright-right{
+         .copyright-social{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            &-text{
+                a{
+                    &:link,&:visited{
+                        color: $white;
+                        text-decoration: none;
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                    } 
+                }
+            }
+         }
+        }
+    }
+}

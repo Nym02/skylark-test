@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+
+
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: $font-dm;
+    @media screen and(max-width: 1440px){
+        font-size: 8px;
+    }
+    @media screen and(max-width: 1000px){
+        font-size: 6px;
+    }
+    // @media screen and(max-width: 768px){
+    //     font-size: 5px;
+    // }
+}
+body{
+    background-color: $bg-primary;
+}
+
+.skylark-service, .skylark-team, .skylark-footer{
+    background-color: $bg-primary;
+    width: 100%;
+}
