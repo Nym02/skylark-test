@@ -1,0 +1,69 @@
+.skylark-transaction {
+  &-main-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5.9rem;
+    padding-bottom: 12rem;
+  }
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-title {
+      h1 {
+        font-size: 3.2rem;
+        font-weight: 600;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 17.4rem;
+          height: 0.1rem;
+          background-color: $purple;
+          top: 7rem;
+          left: 0.5rem;
+        }
+      }
+    }
+  }
+}
+.transaction-slider{
+    margin-top: 10rem;
+    height: 44rem;
+    .mySwiper{
+        .swiper-slide{
+            width: 35.8rem !important;
+        }
+        img{
+            width: 100%;
+        }
+        .swiper-button-prev::after, .swiper-button-next::after{
+            content: "";
+        }
+        .swiper-button-prev {
+            background-image: url("./../img/arrowLeft.svg");
+            /* 이미지가 나오지않을 때, ./img/arrow-left.png로 */
+            background-size: contain;
+            background-position: 50% 60%;
+            background-repeat: no-repeat;
+            left: 0px;
+            top: 43rem;
+          }
+        .swiper-button-next {
+            background-image: url("./../img/arrowRight.svg");
+            /* 이미지가 나오지않을 때, ./img/arrow-left.png로 */
+            background-size: contain;
+            background-position: 50% 60%;
+            background-repeat: no-repeat;
+            left: 3.5rem;
+            top: 43rem;
+          }
+
+          .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal{
+            width: 90%;
+            left: 50%;
+            transform: translate(-50%);
+          }
+
+    }
+}
