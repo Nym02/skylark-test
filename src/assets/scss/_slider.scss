@@ -22,6 +22,9 @@
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 3rem;
+    @media screen and(max-width: 500px) {
+      width: 100%;
+    }
   }
   &-btn-wrap{
     display: flex;
@@ -45,7 +48,7 @@
     height: 100%;
 }
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
-    bottom: 1rem !important;
+    bottom: 6% !important;
     text-align: left;
 }
 .swiper-pagination-bullet{
@@ -60,6 +63,9 @@
     position: relative;
     &:not(:last-child){
         margin-right: 20rem !important;
+        @media screen and(max-width: 1400px){
+          margin-right: 10rem !important;
+        }
     }
   &::after{
     content: "";
@@ -69,6 +75,15 @@
     background-color: white;
     left: 0;
     top: 30px;
+    @media screen and(max-width: 1400px){
+      width: 10rem;
+    }
+  }
+  @media screen and(max-width: 1200px){
+   font-size: 1.3rem;
+  }
+  @media screen and(max-width: 768px){
+   display: none;
   }
 
 }

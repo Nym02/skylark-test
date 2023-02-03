@@ -15,7 +15,6 @@ const Slider = () => {
   const pagination = {
     clickable: true,
     renderBullet: function (index, className) {
-        console.log(page)
       return `<div class="${className}">${page[index]} </div>`;
     },
     

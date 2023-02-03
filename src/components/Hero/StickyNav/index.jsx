@@ -16,12 +16,17 @@ const StickyNav = () => {
     const handleScroll = () => {
         const currentYOffset = window.pageYOffset;
         let visible = false;
-        if(yOffset <= 80){
+        if(window.innerWidth > 768){
+          if(yOffset <= 50){
 
+          } else {
+  
+              visible = yOffset > currentYOffset;
+          }
         } else {
-
-            visible = yOffset > currentYOffset;
+          visible = yOffset > currentYOffset;
         }
+       
 
     console.log({currentYOffset, yOffset});
     setYOffset(currentYOffset);
