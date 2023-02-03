@@ -12,6 +12,10 @@ const StickyNav = () => {
             window.removeEventListener("scroll", handleScroll)
         }
     })
+    /**
+     * @function - {handleScroll} - represents the handleScroll function
+     * @description - it handles the sticky menu on scroll
+     */
 
     const handleScroll = () => {
         const currentYOffset = window.pageYOffset;
@@ -28,7 +32,7 @@ const StickyNav = () => {
         }
        
 
-    console.log({currentYOffset, yOffset});
+
     setYOffset(currentYOffset);
     setVisible(visible);
     }
